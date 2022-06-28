@@ -2,8 +2,7 @@
 # konpaira
 An online editor to enhance coding, which supports C, C++, Python, Java, Node, Rust and allows you to keep track of all your submissions.
 
-Live demo of the project can be found at:
-https://konpaira.herokuapp.com/
+There is an issue with file storage but the whole application runs on local machine.
 
 
 

@@ -1,3 +1,4 @@
+require("dotenv").config();
 const express = require("express");
 const bodyParser = require("body-parser");
 const fs = require("fs");
@@ -8,9 +9,6 @@ const passportLocalMongoose = require("passport-local-mongoose");
 const mongoose = require("mongoose");
 const newFile = require("./createfile");
 const port = process.env.PORT || 3000;
-const url ="mongodb+srv://admin:andhapaisa@konpaira.ptayvgx.mongodb.net/?retryWrites=true&w=majority";
-mongoose.connect(url);
-
 const mydata = require("./database")
 
 const app = express();
@@ -19,7 +17,7 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.use(express.static("public"));
 
 app.use(session({
-  secret: "PasswordManager",
+  secret: "mysecretkey",
   resave: false,
   saveUninitialized: false
 }));
@@ -28,6 +26,8 @@ app.use(passport.initialize());
 app.use(passport.session());
 
 // mongodb+srv://admin:<password>@konpaira.ptayvgx.mongodb.net/?retryWrites=true&w=majority
+const url ="mongodb://localhost:27017/codeExplorer";
+mongoose.connect(url);
 
 
 const userSchema = new mongoose.Schema({
@@ -166,6 +166,6 @@ app.get("/user", (req, res) => {
   res.render("home");
 })
 app.listen(port,()=>{
-    console.log(`server is running at port no ${port}`);
+    console.log(`server is running at port ${port}`);
 })
 

@@ -20,6 +20,7 @@ const createFile = async (sourceCode, language, inputFile, userID, callerID) => 
   file = dir + "/" + filename + ".";
   if (callerID === "1")
     dataBase.insert(filename,language, userID, callerID);
+  // console.log(file);
   fs.writeFileSync(file + language, sourceCode)
   // if (callerID === "0")
   fs.writeFileSync(file + "in", inputFile)
@@ -30,12 +31,12 @@ const execute = async (language, callerID) => {
   let commandLast = ".command";
   // if (callerID === "1")
   //   commandLast = ".submit";
-  console.log(language);
+  // console.log(language);
   let commandVal = "compile.languages." + language + commandLast;
-  console.log(commandVal);
+  // console.log(commandVal);
 
   let val = eval(commandVal);
-  console.log(val);
+  // console.log(val);
 
   return new Promise((resolve, reject) => {
     childProcess.exec(eval(val)

@@ -1,7 +1,7 @@
 {
-  "name": "backend",
+  "name": "konpaira",
   "version": "1.0.0",
-  "description": "",
+  "description": "An online editor to enhance coding, which supports C, C++, Python, Java, Node, Rust and allows you to keep track of all your submissions.",
   "main": "App.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -13,7 +13,9 @@
     "async": "^3.2.4",
     "body-parser": "^1.20.0",
     "child-process": "^1.0.2",
+    "dotenv": "^16.0.1",
     "ejs": "^3.1.8",
+    "env": "^0.0.2",
     "express": "^4.18.1",
     "express-session": "^1.17.3",
     "fs": "^0.0.1-security",
@@ -22,5 +24,14 @@
     "passport-local-mongoose": "^7.1.2",
     "utf8": "^3.0.0",
     "uuid": "^8.3.2"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/prince-codes23/konpaira.git"
+  },
+  "keywords": [],
+  "bugs": {
+    "url": "https://github.com/prince-codes23/konpaira/issues"
+  },
+  "homepage": "https://github.com/prince-codes23/konpaira#readme"
 }

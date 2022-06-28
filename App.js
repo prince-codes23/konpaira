@@ -7,6 +7,10 @@ const passport = require("passport");
 const passportLocalMongoose = require("passport-local-mongoose");
 const mongoose = require("mongoose");
 const newFile = require("./createfile");
+const port = process.env.PORT || 3000;
+const url ="mongodb+srv://admin:andhapaisa@konpaira.ptayvgx.mongodb.net/?retryWrites=true&w=majority";
+mongoose.connect(url);
+
 const mydata = require("./database")
 
 const app = express();
@@ -19,14 +23,12 @@ app.use(session({
   resave: false,
   saveUninitialized: false
 }));
-const port = process.env.PORT || 3000;
+
 app.use(passport.initialize());
 app.use(passport.session());
 
 // mongodb+srv://admin:<password>@konpaira.ptayvgx.mongodb.net/?retryWrites=true&w=majority
-const url ="mongodb+srv://admin:andhapaisa@konpaira.ptayvgx.mongodb.net/?retryWrites=true&w=majority";
 
-mongoose.connect(url);
 
 const userSchema = new mongoose.Schema({
   email: String,

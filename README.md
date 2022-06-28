@@ -12,9 +12,9 @@ https://konpaira.herokuapp.com/
 ## Screenshots
 
 
-![App Screenshot](https://github.com/prince-codes23/konpaira/blob/main/Project/2022-06-28_12-53.png)
-![App Screenshot](https://github.com/prince-codes23/konpaira/blob/main/Project/2022-06-28_12-53_1.png)
-![App Screenshot](https://github.com/prince-codes23/konpaira/blob/main/Project/2022-06-28_12-54.png)
+![App Screenshot](https://github.com/prince-codes23/konpaira/blob/main/screenshots/2022-06-28_12-53.png)
+![App Screenshot](https://github.com/prince-codes23/konpaira/blob/main/screenshots/2022-06-28_12-53_1.png)
+![App Screenshot](https://github.com/prince-codes23/konpaira/blob/main/screenshots/2022-06-28_12-54.png)
 
 ## Tech Stack
 

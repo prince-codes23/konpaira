@@ -13,8 +13,8 @@ https://konpaira.herokuapp.com/
 
 
 ![App Screenshot](https://github.com/prince-codes23/konpaira/blob/main/Project/2022-06-28_12-53.png)
-![App Screenshot](https://drive.google.com/file/d/1VaZD6gjYxejhKlFpUcItlWn7pCMvImnJ/view?usp=sharing)
-![App Screenshot](https://drive.google.com/file/d/10T8Zjlgco0i3LQ1Mlupy0e0lXfWZ7EFg/view?usp=sharing)
+![App Screenshot](https://github.com/prince-codes23/konpaira/blob/main/Project/2022-06-28_12-53_1.png)
+![App Screenshot](https://github.com/prince-codes23/konpaira/blob/main/Project/2022-06-28_12-54.png)
 
 ## Tech Stack
 

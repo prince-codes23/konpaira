@@ -19,7 +19,7 @@ app.use(session({
   resave: false,
   saveUninitialized: false
 }));
-
+const port = process.env.PORT || 3000;
 app.use(passport.initialize());
 app.use(passport.session());
 
@@ -163,6 +163,7 @@ app.get("/status/:fileID",(req,res) => {
 app.get("/user", (req, res) => {
   res.render("home");
 })
-app.listen(3000, function() {
-  console.log("Server is Running at port 3000");
-});
+app.listen(port,()=>{
+    console.log(`server is running at port no ${port}`);
+})
+

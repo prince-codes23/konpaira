@@ -1,0 +1,28 @@
+{
+  "languages": {
+    "cpp": {
+      "command": "'g++ ' + file + language + ' -o ' + file + 'out && ' + file + 'out < ' + file + 'in  '"
+    },
+    "py": {
+      "command": "'python3 '+ file + language +'< '+ file + 'in '"
+    },
+    "c": {
+      "command": "'gcc ' + file + language + ' -o ' + file + 'out && ' + file + 'out < ' + file + 'in  '"
+    },
+    "java": {
+      "command": "'javac '+ file + language +'< '+ file + 'in  '"
+    },
+    "js": {
+      "command": "'node '+ file + language +'< '+ file + 'in '"
+    },
+    "rb": {
+      "command": "'ruby '+ file + language +'< '+ file + 'in  '"
+    },
+    "rust": {
+      "command": "'ruby '+ file + language +'< '+ file + 'in '"
+    },
+    "kotlin": {
+      "command": "'kotlinc '+ file + language +'< '+ file + 'in '"
+    }
+  }
+}

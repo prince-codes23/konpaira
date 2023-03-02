@@ -1,0 +1,19 @@
+.main{
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+.source_text{
+    width: 600px;
+    height: 450px;
+}
+.btns{
+    margin-top: 10px;
+}
+.input_text{
+    height: 250px;
+}
+.output_text{
+    height: 250px;
+}

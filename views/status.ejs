@@ -1,0 +1,15 @@
+<%- include('partials/header') %>
+
+<div class="jumbotron text-center">
+  <div class="container">
+    <i class="fas fa-key fa-6x"></i>
+    <h1 class="display-3">Status</h1>
+    <h2><%= userID %> Submissions</h1>
+    <% userSubmissions.forEach(function(user) { %>
+      <p class = "secret-tex">UniqueId :<a href = "/status/<%= user._id %>"><%= user._id+"."+user.language %></a> | Status : <%= user.status%> |  Submitted Time : <%=user.submissionDate%></p>
+    <% }) %>
+    <hr>
+  </div>
+</div>
+
+<%- include('partials/footer') %>

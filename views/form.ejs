@@ -1,0 +1,51 @@
+ <%- include('partials/header'); %>
+<div id="header">
+        <header id="body-header">
+            <h1 id="Logo" >Konpaira</h1>
+        <div id ='Auth'>
+        <% if(isAuth === false){ %>
+        <div id="loginbutton"><a href="../login">LogIn</a></div>
+        <div id="loginbutton"><a href="../register">SignUp</a></div>
+        <% } else { %>
+        <div id="loginbutton"><a href="../status"><%= currUser %></a></div>
+        <div id="loginbutton"><a href="/logout">SignOut</a></div>
+        <% } %>
+    </div></header>
+        </div>
+  <div class="main">
+        <div class="left">
+        <form action="/" method="post">
+            <label for="">Select Language : </label>
+            <select name="Language"><%= language %>
+                <option value="cpp">C++</option>
+                <option value="c">C</option>
+                <option value="py">Python</option>
+                <option value="java">Java</option>
+                <option value="js">Node</option>
+                <option value="rb">Rust</option>
+            </select>
+            <br><br>
+            <label for="">Enter Your Code </label>
+            <br>
+            <textarea name="sourceCode" rows="15" cols="30" class="source_text"><%=sourceCode %></textarea>
+        <div class="btns">  
+            <input type="submit" class="btn btn-light btn-lg" value="Compile & Run">
+            <input type="submit" class="btn btn-dark btn-lg" formaction="/submit" value="Submit Code">
+        </div>  
+        </div>
+            <br><br>
+           <div class="right">
+            <label for="">Enter Test </label>
+            <br>
+            <textarea name="inputFile" rows="5" cols="30" class="input_text"><%=inputFile%></textarea>
+            <br>
+            <!-- <a class="btn btn-light btn-lg" href="/register" role="button">Register</a> -->
+            <!-- <a class="btn btn-dark btn-lg" href="/login" role="button">Login</a> -->
+       
+        </form><br>
+        <label for="">Output</label><br>
+        <textarea rows="5" cols="30" name="outputArea" readonly class="output_text"><%= output %></textarea>
+    </div> 
+    </div>
+  </body>
+</html>
